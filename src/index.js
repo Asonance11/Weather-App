@@ -1,9 +1,9 @@
 console.log('Hello World');
 const KEY = '4087d6a91edc4919989144657232303';
 
-async function getWeather() {
+async function getWeather(value) {
 	const response = await fetch(
-		`http://api.weatherapi.com/v1/current.json?key=${KEY}&q=London&aqi=no`,
+		`http://api.weatherapi.com/v1/current.json?key=${KEY}&q=${value}&aqi=no`,
 		{ mode: 'cors' }
 	);
 
@@ -11,4 +11,11 @@ async function getWeather() {
 
 	console.log(placeData);
 }
-getWeather();
+
+const searchInput = document.querySelector('#search-input');
+const form = document.querySelector('#searchForm');
+
+form.addEventListener('submit', (e) => {
+	e.preventDefault();
+	getWeather(searchInput.value);
+});
