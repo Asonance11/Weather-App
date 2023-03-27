@@ -9,3 +9,5 @@ function display(data) {
 	temperature.textContent = `${data.current.temp_c}°`;
 	condition.textContent = `${data.current.condition.text}`;
 }
+
+export default display;
