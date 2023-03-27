@@ -11,3 +11,5 @@ async function getWeather(value) {
 		alert(error);
 	}
 }
+
+export default getWeather;
