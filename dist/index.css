@@ -78,3 +78,12 @@ button i {
 /* #icon {
 	width: 70px;
 } */
+.credit {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: #333333;
+}
+a {
+	color: #333333;
+}
