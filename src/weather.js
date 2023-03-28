@@ -6,6 +6,7 @@ async function getWeather(value) {
 			`http://api.weatherapi.com/v1/current.json?key=${KEY}&q=${value}&aqi=no`,
 			{ mode: 'cors' }
 		);
+		if (!response.ok) throw new Error(`City ${value} not found`);
 		const placeData = await response.json();
 		return placeData;
 	} catch (error) {
