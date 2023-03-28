@@ -1,4 +1,3 @@
-console.log('Hello World');
 import { default as display } from './display';
 import { default as getWeather } from './weather';
 
@@ -10,4 +9,5 @@ form.addEventListener('submit', async (e) => {
 	if (input.value == '') return;
 	let weatherData = await getWeather(input.value);
 	display(weatherData);
+	form.reset();
 });

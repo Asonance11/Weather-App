@@ -7,7 +7,7 @@ function display(data) {
 
 	cityName.textContent = `${data.location.name}`;
 	countryName.textContent = `${data.location.country}`;
-	temperature.textContent = `${data.current.temp_c}°`;
+	temperature.textContent = `${data.current.temp_c}°C`;
 	condition.textContent = `${data.current.condition.text}`;
 	icon.src = `http:${data.current.condition.icon}`;
 }
