@@ -2,5 +2,5 @@
 
 Another Weather App added to the world
 
-- [Live Preview](https://asonance11.github.io/Weather-App/)
+- [Live Preview](https://weather-app-tau-two-36.vercel.app/)
 - [API](https://www.weatherapi.com/)
