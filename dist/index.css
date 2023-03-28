@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #a0a7b6;
+}
+main {
+	padding: 2rem;
+	background: #262634;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+	border-radius: 0.5rem;
+}
+form {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+input {
+	background: transparent;
+	height: 30px;
+	border: none;
+	outline: none;
+	border-bottom-style: groove;
+	border-width: 2px;
+	color: #f2f2f3;
+}
+input:focus {
+	outline: none;
+	background: transparent;
+	color: #f2f2f3;
+	border-bottom-style: groove;
+}
+button {
+	background: none;
+	outline: none;
+	border: none;
+}
+button i {
+	color: #869ed8;
+}
+.result {
+	display: flex;
+	flex-direction: column;
+}
+.location {
+	margin-top: 1rem;
+	color: #f2f2f3;
+}
+.city {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+.country {
+	font-size: 1rem;
+	font-weight: 400;
+}
+.weather {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #f2f2f3;
+}
+.temperature {
+	font-size: 3rem;
+	font-weight: 600;
+}
+/* #icon {
+	width: 70px;
+} */
